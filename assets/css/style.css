@@ -1,0 +1,31 @@
+footer { 
+    width:100%; 
+    background-color: snow; 
+    min-height:250px; 
+    padding:10px 0px 25px 0px ;
+    margin-top: 10px;
+}
+
+body {
+    color: darkblue;
+    background: lightgray;
+}
+
+#bg-cover {
+    background-image: url('../images/table_food.jpg');
+    background-size: auto;
+    background-repeat: no-repeat;
+}
+
+.display-2 {
+    color: snow;
+    
+}
+
+.lead {
+    color: snow;
+}
+
+
+
+/*# sourceMappingURL=style.css.map */
