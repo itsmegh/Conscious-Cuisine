@@ -2,12 +2,12 @@
 <html lang="en">
 
 <head>
+
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <title>Conscious Nutrition</title>
-  <link href="data:image/x-icon;base64,AAABAAEAEBAQAAAAAAAoAQAAFgAAACgAAAAQAAAAIAAAAAEABAAAAAAAgAAAAAAAAAAAAAAAEAAAAAAAAAASCgIAAAAAAIBqUwD38esAuLGrAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAERERERERERERERERERERERERIiIiIhERERIiIiIiIREREiIiIiIhERESIiIiIiERERIiIiIiIREREiIiIiIhERIiIiIiIiIhIRIiIiIiIRISIiIiIiIiIREUMzMzM0ERERFEREREEREREREAABERERERERABERERERERERERERH//wAA//8AAPAPAADgBwAA4AcAAOAHAADgBwAA4AcAAIABAABgBgAAgAEAAOAHAADwDwAA/D8AAP5/AAD//wAA"
-    rel="icon" type="image/x-icon" />
+  <link href="data:image/x-icon;base64,AAABAAEAEBAAAAEAIABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAtKFcPEQ85PQkGIJoYEy3ONytN8kw+Y/pcTHL4ZFF7521ZiLhtV4uNX0eCRFQ8fBgAAAAAAAAAAGJciQFPSXsLKCFZfRoUSc5KPmr4eWmS/piGrf+jkbb/qZe6/6iWuf+mlLj8nImv9ot3pNh3YZaeTjR4Gj4kagJcVocRQjp1cTEmaftmVI//sJ7E/7+uz//FttT/xrfV/8W10//CstH/wrPR/76vzf+rmb3/m4ew/mVMh51ILnAhTEODSD8xe9B6ZaD/qZW//8Oy0//LvNr/zb/c/8y92//Ht9f/xLTU/8Oz0/+/r8//uKfJ/6CMtf+Ca5zkXER+Zk5BiZheSZT2qZTA/72qz//SxOD/z8Hf/8/B3//Xy+X/xbbX/8S11//LvNv/xbfW/7WjyP+zosb/lH+r+29ZjK9PQovhgWuq/r2r0P/Fs9b/zL3d/8y+3f/Httj/y73c/8e72//Vzef/xbbY/8q82/+4psv/xLbV/6uZv/+KdaTiUEKL9ZN+tf/Httj/y7rc/8e32v/Qw+H/y7vc/82/3//QxuP/4d3x/8e42v/Ht9n/wbHT/8q72v+wn8T/inSk82RWmealk8L/zr7e/8283v/Iudz/z8Dh/86+3//QweH/1srm/9vP6v/Ux+X/yLjb/8Cw0//HuNn/r53E/oNroNB8bauyrZvK+9PE4//QwOH/wrDX/8m43P/OvuD/0sTk/97T7f/e0u3/18nn/8e32f/HuNn/x7jZ/6iWwPN/ZqCOkoK9aK2bzOnZy+j/0cHi/9fJ6P/Pv+L/wK3W/8m53f/UxuX/1cfm/8/A4f/Judv/y7zc/8Gx1f+WgbXAb1WWN5mJxDCvntC91MXl/9vN6v/azOr/39Pu/9vO6//WyOf/0sPk/8/A4f/OvuD/yLjb/7uq0f2ijr7od1ygTWRHkQmUhMILqZnPXsKy2/fYyun/3dDs/9rM6f/Wx+b/0cHj/8m53f/MvN//zb7g/8Cv1f+ZhbfYeWGhcFc3iwQAAAAAAAAAAJmIxAinlcpxuanWz9HC5frYyur+2Mrp/9TF5v/IuNz+u6rT+q2cyOKjkcCrfWikMWRNkQkAAAAAAAAAAAAAAAAAAAAAjnu7Dp2KxESxn9KluafW07Gg0Peol8r6mYe+1Il4sqV3ZqNXfGqlIHhjnwEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA//8AAPAPAADgAwAAwAEAAIABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIABAACAAwAAwAcAAOAPAADwPwAA//8AAA==" rel="icon" type="image/x-icon" />
   <!-- Bootstrap CSS -->
 
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
@@ -28,9 +28,12 @@
 
     <div class="row">
       <div class="offset-sm-2 col-sm-8">
-        <div class="card">
+        <div class="card" id="page-header">
           <div class="card-body">
-            
+            <h5>A delicious resource to help you find the perfect recipe with all nutrition information included.</h5>
+            <p>To use, search by ingredient and filter results by course. 
+              All results provide nutrition information to fit your lifestyle and nutrition needs.
+            </p>
           </div>
         </div>
       </div>
@@ -43,7 +46,7 @@
             <nav class="navbar navbar-light searchNav">
               <form class="form-inline justify-content-md-center">
 
-                <h4> Feeling hungry? Search by ingredient and filter by course.</h4>
+                <h4 class="searchHeader"> Feeling hungry? Search by ingredient and filter by course.</h4>
 
                 <input class="form-control mr-sm-2" id="recipeSearch" name="q" type="search" placeholder="Enter Ingredient"
                   aria-label="Search" required aria-required="true">
@@ -57,7 +60,7 @@
                   <h5 class="mb-0">
                     <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
                       aria-controls="collapseOne">
-                      Courses
+                      <strong>Courses</strong>
                     </button>
                   </h5>
                 </div>
@@ -73,7 +76,7 @@
                   </div>
                 </div>
               </div>
-              <div class="card">
+              <!-- <div class="card">
                 <!-- <div class="card-header" id="headingTwo">
                   <h5 class="mb-0">
                     <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo"
@@ -96,11 +99,11 @@
                     <input type="checkbox" name="allergy1" value="wheat" class="lgchbx"> Wheat<br>
                     <input type="checkbox" name="allergy1" value="sulfite" class="lgchbx"> Sulfite<br>
                   </div>
-                </div> -->
-              </div>
+                </div> --> 
+              </div> 
             </div>
 
-            <button class="btn my-2 my-sm-0" id="button" type="submit">Search</button>
+            <button class="btn my-2 my-sm-0" id="submitButton" type="submit"><strong>Search</strong></button>
           </div>
         </div>
       </div>
@@ -134,12 +137,12 @@
                 </div>
         
                 <div class=" col-sm-4 col-md  col-12 col">
-                    <h5 class="headin5_amrc col_white_amrc pt2">Learn More About Our Team</h5>
-                        <ul class="footer_ul_amrc">
-                            <li><a href="http://www.github.com">Meghan Morris</a></li>
-                            <li><a href="http://www.github.com">Stephanie Manhart</a></li>
-                            <li><a href="http://www.github.com">Bhumi Shah</li>
-                            <li><a href="http://www.github.com">Olivia F</a></li>
+                    <h5 class="headin5 col_white pt2">Learn About Our Team</h5>
+                        <ul class="footer_ul">
+                            <li><a class="resumeLink" href="http://www.github.com">Meghan Morris</a></li>
+                            <li><a class="resumeLink" href="http://www.github.com">Stephanie Manhart</a></li>
+                            <li><a class="resumeLink" href="http://www.github.com">Bhumi Shah</li>
+                            <li><a class="resumeLink" href="http://www.github.com">Olivia Fontanese</a></li>
                         </ul>
                 </div>
             </div>
@@ -148,7 +151,6 @@
                 <p class="text-center">Copyright @2018 | Designed by <a href="https://github.com/itsmegh">Meghan Morris </a></p>
                 <div class="yummly">&nbsp;&nbsp;| Powered by<a href='http://www.yummly.co/recipes'><img alt='Yummly' src='assets/images/yummlylogo.png' /></a></div>
                 <div class="edamam">and&nbsp;&nbsp;&nbsp;&nbsp;<a href='https://developer.edamam.com/edamam-nutrition-api'><img alt='Edamam' src='assets/images/Edamam2.jpg' /></a></div>
-
             </div>   
 
         </div>

@@ -1,14 +1,6 @@
-footer { 
-    width:100%; 
-    background-color: snow; 
-    min-height:250px; 
-    padding:10px 0px 25px 0px ;
-    margin-top: 10px;
-}
-
 body {
-    color: darkblue;
-    background: lightgray;
+    color: #547D8B;
+    background:#808080;
 }
 
 #bg-cover {
@@ -24,6 +16,45 @@ body {
 
 .lead {
     color: snow;
+}
+
+#page-header {
+    padding: 5px 30px 5px 25px;
+    background-color: #e5e5e5;
+    margin-bottom: 10px;
+}
+
+.searchHeader {
+    position: center;
+}
+
+#headingOne {
+    background-color: #e5e5e5;
+}
+
+#submitButton {
+    margin-top: 10px;
+    color: #404040;
+}
+
+#collapseOne {
+    margin-bottom: 15px;
+}
+
+.btn-link {
+    color: #547D8B;
+}
+
+footer { 
+    width:100%; 
+    background-color: snow; 
+    min-height:250px; 
+    padding:25px 0px 10px 0px ;
+    margin-top: 20px;
+}
+
+.resumeLink {
+    color: #547D8B;
 }
 
 
