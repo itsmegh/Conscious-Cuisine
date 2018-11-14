@@ -87,12 +87,12 @@ function recipeSearch(ingredient) {
 
         }
     })
-}
+};
 
 
 //pulls the search term value to feed to the url in the recipesearch function
 // //pulls the search term value to feed to the url in the recipesearch function
-$("#button").on("click", function (event) {
+$("#submitButton").on("click", function (event) {
     event.preventDefault();
 
    

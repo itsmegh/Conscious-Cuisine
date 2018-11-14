@@ -45,6 +45,10 @@ body {
     color: #547D8B;
 }
 
+#recipeCard {
+    margin-top: 10px;
+}
+
 footer { 
     width:100%; 
     background-color: snow; 
